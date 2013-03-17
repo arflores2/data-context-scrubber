@@ -1,0 +1,223 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+#timeline {
+  width: 100%;
+  height: 300px;
+  max-height: 300px;
+  padding: 15px;
+  /* border:1px solid black; */
+}
+
+#timeline-viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#timeline-controls {
+  position: absolute;
+  width: 50px;
+}
+
+#timeline-controls button {
+
+}
+
+#timeline-content {
+  height: 100%;
+}
+
+#timeline-info {
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  z-index: 100;
+  color: #767676;
+}
+
+#timeline-info-range {
+  position: absolute;
+  left: 0;
+}
+
+#timeline-info-cursor {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+#showing-label {
+  float: left;
+}
+
+#cursor-label {
+  float: left;
+}
+
+.controls {
+  width: 30px;
+  height: 50px;
+  /* float: right; */
+}
+
+.unit {
+  height: 50px;
+  display: inline;
+  float: left;
+  text-align: center;
+  background-image: url('../images/unit-marker.jpg');
+  background-repeat: no-repeat;
+  /* background-position: 527px 0px; */
+}
+
+.unit .label {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.sub-unit {
+  height: 20px;
+  float: left;
+  background: url('../images/sub-unit-marker.jpg') no-repeat;
+}
+
+.month-label {
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #767676;
+  position: relative;
+  z-index: 1000;
+  display: inline;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-spacing: 0px;
+}
+
+#timeline-table, #timeline-table > tbody {
+  height: 300px;
+}
+
+#timeline-table tr {
+  margin: 0;
+}
+
+td.month {
+  vertical-align: bottom;
+  padding: 0;
+  margin: 0;
+}
+
+#timeline-table tbody tr.y-axis-row:not(:first-child) td.month {
+  border-top: 1px solid #ccc;
+}
+
+.unit-marker {
+  background: url('../images/unit-marker.jpg') no-repeat;
+}
+
+.sub-unit-marker {
+  background: url('../images/sub-unit-marker.jpg') no-repeat;
+}
+
+table.days-table {
+
+}
+
+table.days-table td {
+  vertical-align: bottom;
+}
+
+.zoom {
+  position: relative;
+}
+
+div.item {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0;
+  background: #74b025;
+}
+
+.x-axis {
+  background: #f2f2f2;
+  height: 25px;
+}
+
+tr.y-axis-row {
+  border-top: 1px solid #d5d5d5;
+}
+
+tr.y-axis-marker {
+  position: absolute;
+  color: #767676;
+  padding: 10px 0;
+}
+
+.x-axis table.days-table, .x-axis table.days-table tbody {
+}
+
+#timeline-scrubber {
+  position: absolute;
+  z-index: 1000;
+  /*
+  -khtml-opacity: .1;
+  -moz-opacity: .1;
+  -ms-filter: "alpha(opacity=10)";
+  filter: alpha(opacity=10);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.1);
+  opacity: .1;
+  */
+  background: rgba(0, 0, 0, 0.1);
+  cursor: move;
+}
+
+#undefined-close {
+	color: #767676;
+	height: 30px;
+	width: 30px;
+	background: #f2f2f2;
+	border: 1px solid #d5d5d5;
+	padding-left: 7px;
+	padding-bottom: 4px;
+	font-size: 8px;
+	position: absolute;
+	right: 0;
+}
+
+#timeline-zoom-in {
+	color: #767676;
+	font-weight: bold;
+	height: 30px;
+	width: 30px;
+	background: #f2f2f2;
+	border: 1px solid #d5d5d5;
+	padding-left: 6px;
+	padding-bottom: 4px;
+	font-size: 8px;
+}
+
+#timeline-zoom-out {
+	color: #767676;
+	font-weight: bold;
+	height: 30px;
+	width: 30px;
+	background: #f2f2f2;
+	border: 1px solid #d5d5d5;
+	padding-left: 6px;
+	padding-bottom: 4px;
+	margin-top: -2px;
+	font-size: 8px;
+	line-height: 24px;
+}
