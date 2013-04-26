@@ -1,1 +1,3 @@
 Data viewer with context scrubbing
+
+Allows user to select range by clicking and dragging with mouse in graph area to create a context scrubber. The scrubber can be used to move around in the graph area.

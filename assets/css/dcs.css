@@ -205,7 +205,6 @@ tr.y-axis-marker {
 	border: 1px solid #d5d5d5;
 	padding-left: 6px;
 	padding-bottom: 4px;
-	font-size: 8px;
 }
 
 #timeline-zoom-out {
@@ -218,6 +217,5 @@ tr.y-axis-marker {
 	padding-left: 6px;
 	padding-bottom: 4px;
 	margin-top: -2px;
-	font-size: 8px;
 	line-height: 24px;
 }
